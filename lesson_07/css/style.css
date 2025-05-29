@@ -1,7 +1,7 @@
 /* Підключення шрифтів */
 
 /* Google Fonts (Plugin) */
-/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
 
 /* Локальне підключення шрифтів */
 @import url("fonts.css");
@@ -12,31 +12,46 @@
 .header {
 	width: 100%;
 	height: 70px;
-	font-size: 30px;
-	font-weight: 400;
-	text-align: left;
-	color: red;
-	padding: 20px 0px 20px 25px;
 	background-color: #FFF;
+	border: 1px solid #FE3F3F;
+	box-shadow: #1207e6 0 0 3px;
+}
+
+.header__container {
+	padding: 1px 0 0 25px;
+	max-width: 1200px;
+}
+
+.logo__img {
+    height: 64px;
+	width: 64px;
 }
 
 /* Основні стилі */
 body {
 	font-family: "Gilroy", sans-serif;
-	background: #412672;
-	width: 100%;
-    height: 80%;
+	font-size: 15px;
+	line-height: 1.2;
 }
+
 .wrapper {
 	overflow: clip;
-	min-height: 100%;
+	min-height: 100vh;
+}
+
+.business {
+	max-width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	border: none;
+	box-sizing: border-box;
 }
 
 .main__container {
-	display: inline-block;
+	width: 100%;
 	margin: 0 auto;
-	padding: 61px 983px 0px 120px;
-
+	padding: 25px 0 0 70px;
+	background-color: #412672;
 }
 
 .item-title {
@@ -60,107 +75,111 @@ body {
 /* ============================================= */
 
 .block__business {
+	width: 100%; 
+	margin: 0 auto;
 	display: inline-block;
-    padding: 31px 20px 102px 120px;
-}
-
-.item__content:hover {
-	background: #FFBE48;
-    box-shadow: 0px 384px 108px 
-	0px rgba(0, 0, 0, 0.00), 
-	0px 246px 98px 0px rgba(0, 0, 0, 0.01), 
-	0px 138px 83px 0px rgba(0, 0, 0, 0.05), 
-	0px 62px 62px 0px rgba(0, 0, 0, 0.09), 
-	0px 15px 34px 0px rgba(0, 0, 0, 0.10);
-}
-
-.item__content:active {
-	background-color: blueviolet;
+	padding: 31px 15px 102px 60px;
+	font-size: 0;
+	background-color: #412672;
 }
 
 .item__content {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid #ccc;
-	width: 387px; 
+	min-width: 300px;
+	max-width: 400px;
+	width: calc(33.33% - 20px);
 	min-height: 514px;
-	padding-top: 31px;
-	margin-right: 20px;
-    background-color: #FFF;
+	padding: 20px 20px 20px 20px;
+	margin: 20px;
+	background-color: #FFF;
+	font-size: 16px;
+	box-sizing: border-box;
 }
 
-.img__block { 
-	display: inline-block;
-	width: 387px;
-    height: 306px;
-	margin-top: -10px;
-	padding-right: 20px;
-	padding-left: 20px;
+.img__block {
+	display: block;
+	width: 100%;
+	height: auto;
+	min-height: 306px;
+	object-fit: cover;
+}
+
+.item__content:hover {
+	background: #FFBE48;
+	box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00),
+		0px 246px 98px 0px rgba(0, 0, 0, 0.01),
+		0px 138px 83px 0px rgba(0, 0, 0, 0.05),
+		0px 62px 62px 0px rgba(0, 0, 0, 0.09),
+		0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+.item__content:active {
+	background-color: blueviolet;
 }
 
 .img__block:hover {
 	opacity: 0.7;
 }
 
-
 .title__name {
-    align-self: stretch;
+	align-self: stretch;
 	color: #000;
 	font-family: "Inter", sans-serif;
 	font-size: 22px;
 	font-weight: 600;
-	padding: 16px 20px 0px 20px;
+	margin: 16px 20px 0px 20px;
 }
 
 .title__text {
 	align-self: stretch;
-	width: 387px;
-	height: auto;
+	max-width: 387px;
+	height: auto; 
 	color: #4F4F4F;
 	font-family: "Inter", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 19px;
-	padding: 16px 20px 0px 20px;
+	margin: 16px 20px 0px 20px;
 }
 
 .link {
 	color: #FE3F3F;
 	font-family: "Inter", sans-serif;
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 400; 
 	line-height: 19px;
-	padding: 16px 20px 20px 20px;
-	margin-bottom: 0px;
+	margin: 16px 20px 20px 20px;
+	display: block;
 }
 
 .link:hover {
 	color: blue;
 	text-decoration: underline;
-	
 }
 
 /* ======== Faculty ======== */
 
 .section__faculty {
-	width: 1440px;
+	width: 100%;
+	height: auto; 
 	background-color: #FFF;
 }
 
 .secondary__container {
-	display: block;
-	width: 518px;
-	margin-left: 120px;
-	padding-top: 153px;
+	min-width: 518px;
+	margin-left: 70px;
+	padding-top: 35px;
+	text-align: left;
 }
-
 
 .faculty__main {
 	color: #412672;
 	font-family: "Inter", sans-serif;
 	font-size: 34px;
 	font-weight: 400;
-
+	line-height: 1.3;
 }
 
 .faculty__main span {
@@ -171,16 +190,18 @@ body {
 }
 
 .faculty__text {
-    color: #412672;
+	color: #412672;
 	font-family: "Inter", sans-serif;
 	font-size: 22px;
-	font-weight: 400;
-	padding: 20px 0px 20px 0px;
+	font-weight: 400; 
+	margin: 20px 0px 20px 0px;
+	line-height: 1.5;
 }
 
 .faculty__block {
 	width: 505px;
-	padding: 10px 0px 139px 0px;
+	padding: 10px 0px 30px 40px;
+	list-style: none;
 }
 
 .block__list {
@@ -188,564 +209,53 @@ body {
 	font-family: "Inter", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
-	line-height: 2.55;
+	line-height: 1.4;
+	margin-bottom: 10px;
 }
 
-.block__list::before {	
+.block__list::before {
 	content: "";
+	display: inline-block;
 	width: 29px;
 	height: 29px;
 	background: url("../img/Frame.svg") 0 0 / 29px;
 	vertical-align: middle;
 	margin-right: 15px;
-	
-}
-
-/* ======== Game ======== */
-
-.container__game {
-    max-width: 100%;
-	min-height: 80%;
-	padding: 50px 0;
-	background: url(../img/mexican-desert.jpg) center center no-repeat;
-	background-size: cover;
-}
-
-.name__game {
-    font-size: 30px;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 20px;
-	color: #FFF;
-}
-
-.start__game {
-    min-width: 50px;
-	min-height: 30px;
-	text-align: center;
-	padding-top: 8px;
-	background-color: yellow;
-	border-radius: 25px;
-	position: absolute;
-	right: 110px;
-	bottom: 100px;
-}
-
-.game__field { 
-	position: relative;
-}
-
-.start__game:hover {
-	opacity: 1;
-	visibility: visible;
-	background-color: blue;
-}
-
-.start__game:active + .first__track {
-	opacity: 1;
-	visibility: visible;
-	background-color: lightblue;
-	right: 150px;
-	bottom: 85px;
-}
-
-[class*="__track"]{
-	margin: 0 auto;
-	opacity: 0.5;
-	visibility: hidden;
-}
-
-[class*="__track"]:hover {
-    opacity: 0.5;
-	visibility: visible;
-}
-
-[class*="__track"]:hover + [class*="__track"] {
-	opacity: 1;
-	visibility: visible;
-}
-
-.first__track {
-    width: 50px;
-	height: 100px;
-	position: absolute;
-	background-color: green;
-}
-
-.second__track {
-    width: 300px;
-	height: 45px;
-	margin-right: 475px;
-	background-color: #64DD17;
-	position: absolute;
-	right: -276px;
-	bottom: 110px;
-}
-
-.third__track {
-    width: 70px;
-	height: 370px;
-	margin-right: 735px;
-	background-color: #AEEA00;
-	position: absolute;
-	right: -276px;
-	bottom: 110px;
-}
-
-.four__track {
-    width: 750px;
-	height: 45px;
-	margin-left: 225px;
-	background-color: #5a2eb0;
-}
-
-.five__track {
-    width: 30px;
-	height: 70px;
-	margin-left: 230px;
-	background-color: #24eb0a;
-}
-
-.six__track {
-    width: 600px;
-	height: 55px;
-	margin-left: 230px;
-	background-color: #0b5c2e;
-}
-
-.seven__track {
-    width: 35px;
-	height: 90px;
-	margin-right: 605px;
-	background-color: #0d7b49;
-}
-
-.eight__track {
-    width: 300px;
-	height: 45px;
-	margin-left: 600px;
-	background-color: #bf0ca4;
-}
-
-.nine__track {
-    margin: 0 auto;
-	margin-left: 630px;
-	width: 290px;
-	height: 200px;
-	background: url(../img/rembo.png) no-repeat;
-	background-size: contain;
+	margin-left: -44px;
 }
 
 /* ======== Footer ======== */
 
 .footer {
 	width: 100%;
-	height: 70px;
-	font-size: 30px;
-	font-weight: 400;
-	text-align: left;
-	padding: 20px 0px 20px 25px;
+	padding: 20px 0px 20px 65px;
+	background-color: #ffffff;
+	border: 1px solid #FE3F3F;
+	box-shadow: #1207e6 0 0 3px;
+}
+
+.button {
+	border: 2px solid black;
+	margin: 5px;
+	padding: 6px 25px;
+	border-radius: 25px;
 	color: red;
-	background-color: #FFF;
-}
-/* Анатомія псевдокласів */
-
-/*
-селектор:псевдоклас{
-}
-*/
-/*
-Вкладеність
-селектор#1:псевдоклас селектор#2{
-}
-*/
-
-/* Псевдокласи стану */
-
-/* Стан "в спокої" */
-/* .link {
-	color: yellow;
-} */
-
-/*
-:hover
-Звернення до елемента у стані 
-"при наведенні курсору"
-Застосовується до будь-якого елемента
-*/
-/* .link:hover {
-	color: green;
-	text-decoration: underline;
-}
-
-.link:hover span {
-	
-} */
-
-/* .block {
-}
-.block__inner {
-	background-color: #7a956b;
-	width: 100px;
-	height: 100px;
-	visibility: hidden;
-} */
-/* Непрацює */
-/* .block__inner:hover {
-	visibility: visible;
-} */
-/* Працює */
-/* .block:hover .block__inner {
-	visibility: visible;
-} */
-
-/*
-:active Звернення до елемента у стані 
-"при натиснутій клавіші миші"
-*/
-/* .link:active {
-	color: blue;
-} */
-
-/*
-:visited Звернення до nеuу A 
-у стані "відвіданого посилання"
-обмежена кількість властивостей
-
-Варто зазначити, що через міркування безпеки 
-та конфіденційності браузери дозволяють 
-змінювати лише деякі властивості для псевдокласу :visited, такі як:
-• color (колір тексту),
-• background-color (колір фону),
-• border-color (колір рамки),
-• outline-color (колір обвідки),
-• column-rule-color (колір розділових ліній у колонках),
-• text-decoration-color (колір текстових прикрас).
-*/
-/* .link:visited {
-	color: rgb(95, 95, 49);
-} */
-
-/*
-:focus, :focus-visible Звернення до 
-елементу у стані "фокусу"
-*/
-/* Завжди коли взаємодіємо з об'єктом */
-/*
-.link:focus {
-	color: red;
-}
-*/
-/* Тільки коли на об'єкт перейшли (TAB) */
-/* .link:focus-visible {
-	outline: 1px dotted yellow;
-} */
-/*
-.input {
-	padding: 5px;
-	width: 50px;
-	border: 1px solid yellow;
-	margin-bottom: 10px;
-	transition: all 0.3s;
-}
-.input:focus {
-	width: 200px;
-}
-*/
-
-/*
-:target
-Звернення до елемента у стані
-"ефекту від посилання з іншого об'єкту"
-*/
-
-/* .block__inner:target {
-	visibility: visible;
-} */
-
-/* Псевдокласи положення у коді */
-
-/* .text {
-	background-color: #7a956b;
-	padding: 15px;
-} */
-/*
-.text p {
-	margin-bottom: 10px;
-}
-.text p:last-child {
-	margin-bottom: 0;
-}
-*/
-
-/*
-:first-child
-Звернення до першого дочірнього елементу в коді
-*/
-/* якщо тег P перший */
-/*
-.text p:first-child {
-	color: #000;
-}*/
-
-/* Будь-який перший тег */
-/*
-.text *:first-child {
-	color: #000;
-}
-*/
-/* 
-:first-of-type
-Звернення до першого вказаного 
-об'єкту в коді
-*/
-/*
-.text p:first-of-type {
-	color: #000;
-}
-*/
-
-/*
-:last-child
-Звернення до останього 
-елементу в коді
-*/
-/* якщо тег P останній */
-/*
-.text p:last-child {
-	text-transform: uppercase;
-}
-*/
-/*
-:last-of-type
-Звернення до останього 
-вказаного об'єкту в коді
-*/
-
-/* останній тег P */
-/*
-.text p:last-of-type {
-	text-transform: uppercase;
-}
-*/
-
-/* Шукає елемент за номером */
-/*
-:nth-child(значення/алгоритм)
-Звернення до конкретного елементу (ів) в коді
-*/
-
-/*
-.text p:nth-child(2) {
-	color: #000;
-}
-*/
-/* Шукає вказаний селектор за номером */
-/* 
-:nth-of-type()
-*/
-
-/*
-.text p:nth-of-type(2) {
-	color: #000;
-}
-*/
-
-/* 
-	Алгоритми NTH
-
-	odd - через один не парні
-	even - через один парні
-
-*/
-/*
-.text p:nth-child(even) {
-	color: #000;
-}
-*/
-
-/* Алгоритм "кожен-через" */
-/* коженn + починаючи з */
-
-/* Кожен третій */
-/*
-.text p:nth-of-type(3n) {
-	color: #000;
-}*/
-
-/* Кожен третій починаючи з першого */
-/*
-.text p:nth-of-type(3n + 1) {
-	color: #000;
-}
-*/
-/* Кожен 4 починаючи з 2 */
-/*
-.text p:nth-of-type(4n + 2) {
-	color: #000;
-}*/
-/*
-.item:nth-of-type(even) {
-	padding-top: 48px;
-}
-*/
-/* Кожен 6 починаючи з 3 */
-/* та кожен 6 починаючи з 4 */
-/*
-.text p:nth-of-type(6n + 3),
-.text p:nth-of-type(6n + 4) {
-	color: #000;
-}
-*/
-
-/*
-:not(селектор або псевдоклас) 
-Псевдоклас виключення
-*/
-
-/* .text p:not(:last-child) {
-	margin-bottom: 10px;
-} */
-/*
-.text p:not(.no) {
-	margin-bottom: 10px;
-}
-*/
-
-/* 
-:has(селектор або псевдоклас) 
-Псевдоклас присутності в коді
-*/
-/*
-.text:has(.yes) p {
-	color: #000;
-}*/
-
-/* Гарна практика */
-/* .some-block {
-	background-color: #7a956b;
-	padding: 15px;
-}
-.some-block > * {
-	margin-bottom: 15px;
-}
-.some-block h1 {
-}
-.some-block div {
-	margin-bottom: 20px;
-}
-.some-block div p:not(:last-child) {
-	margin-bottom: 5px;
-}
-.some-block img {
-}
-.some-block a:hover {
-	text-decoration: underline;
-}
-.some-block > *:last-child {
-	margin-bottom: 0;
-} */
-
-/* 
-	Псевдокласи мають більший пріоритет
-	(уточнення)
-*/
-
-/* ============================================= */
-/* =============== Псевдоелементи ============== */
-/* ============================================= */
-
-/* Анатомія псевдоелементів */
-/*
-селектор::псевдоелемент{
-}
-
-Псевдоелементи не можна додати до 
-одинарних тегів (без зачиняючих елементів) (наприклад img,br), 
-тому що ці теги не можуть містити в собі контенту.
-*/
-
-/*
-::before{}
-::after{}
-
-!!!!! Псевдоелементи - рядкові (але в reset 
-доданий display: inline-block;) !!!!!
-Властивість content: ""; - Обов'язкова!
-*/
-/*
-.span::before {
-	content: "(";
-}
-.span::after {
-	content: ")";
-}*/
-
-/* .list {
-}
-.list__item {
-	padding-left: 40px;
-}
-.list__item::before {
-	width: 15px;
-	height: 15px;
-	vertical-align: top;
-	background-color: #7a956b;
-	border-radius: 50%;
-	margin-right: 5px;
-	content: "";
-}
-.list__item:hover::before {
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
-	border-radius: 40%;
-	background-color: #77608d;
-}
-
-.list__item:not(:last-child) {
-	margin-bottom: 10px;
-}
-.list__link {
-}
-.list__link:hover {
-	text-decoration: underline;
-} */
-
-/*
-.link-image {
-	position: relative;
-}
-.link-image::after {
-	content: "";
-	background-color: #000;
-	width: 100%;
-	height: 100%;
-
-	opacity: 0.5;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	transition: all 0.3s;
-}
-
-.link-image:hover::after {
-	opacity: 0;
-}
-*/
-
-/*
-.title {
 	display: inline-block;
 }
-.title::after {
-	content: "";
-	height: 1px;
-	width: 60%;
-	background-color: #7a956b;
-	display: block;
-	margin-top: 3px;
+
+.button:hover {
+	opacity: 0.8;
+	color: #ff4f00;
+	text-decoration: underline;
+	background-color: greenyellow;
 }
-*/
+
+.contacts {
+	border: 1px solid #ff4f00;
+	margin: 20px;
+	padding: 22px 50px;
+	font-family: "Poppins", sans-serif;
+	font-size: 22px;
+	line-height: 1.5;
+	background-color: #FE3F3F;
+}
